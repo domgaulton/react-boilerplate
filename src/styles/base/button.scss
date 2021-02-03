@@ -1,0 +1,14 @@
+button {
+  background: $color-highlight;
+  border: none;
+  cursor: pointer;
+
+  &:disabled {
+    background: grey;
+    cursor: default;
+  }
+
+  &.favourite {
+    background: $color-tertiary;
+  }
+}

@@ -1,0 +1,25 @@
+// Breakpoints
+$screen-sm-min: 480px;
+$screen-md-min: 839px;
+$screen-lg-min: 1024px;
+
+// Between 480px to 839px
+@mixin screen-min-sm {
+  @media (min-width: $screen-sm-min) {
+    @content;
+  }
+}
+
+// Between 839px to 1024px
+@mixin screen-min-md {
+  @media (min-width: $screen-md-min) {
+    @content;
+  }
+}
+
+// Over
+@mixin screen-min-lg {
+  @media (min-width: $screen-lg-min) {
+    @content;
+  }
+}
