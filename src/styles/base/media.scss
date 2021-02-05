@@ -23,3 +23,20 @@ $screen-lg-min: 1024px;
     @content;
   }
 }
+
+@mixin bootsrapWidth() {
+  margin: auto auto;
+  width: 95%;
+
+  @include screen-min-sm {
+    width: 460px;
+  }
+
+  @include screen-min-md {
+    width: 800px;
+  }
+
+  @include screen-min-lg {
+    width: 960px;
+  }
+}

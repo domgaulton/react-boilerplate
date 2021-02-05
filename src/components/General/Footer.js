@@ -1,11 +1,12 @@
 import React from 'react';
+import Container from '../UX/Container'
 
 const Footer = () => {
   return (
     <footer>
-      <div className="container">
+      <Container containerName="footer-container">
         <p>Footer text</p>
-      </div>
+      </Container>
     </footer>
   );
 }

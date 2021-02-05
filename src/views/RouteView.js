@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { Context } from '../context/Context';
 import Loading from '../components/General/Loading';
-
+import Container from '../components/UX/Container';
 
 const RouteView = props => {
   const [ contextState ] = useContext(Context);
@@ -15,14 +15,14 @@ const RouteView = props => {
   return !routeId ? (
     <Loading />
   ) : (
-    <React.Fragment>
+    <Container>
       <h1>{`Route ID: ${routePropsId}`}</h1>
       {parseInt(contextState.favouriteRoute) === parseInt(routePropsId) ? (
         <p>Favourite route</p>
       ) : (
         <p>{`The favourite route is ${contextState.favouriteRoute}`}</p>
       )}
-    </React.Fragment>
+    </Container>
   );
 }
 
